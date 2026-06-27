@@ -25,7 +25,7 @@ export const weddingData = {
 
   // ── HERO SECTION ───────────────────────────────────────────
   hero: {
-    blessing: "🪔 Shri Ganeshaya Namah 🪔",
+    blessing: "🪔 Shri Ganeshaya Namah  🪔",
     tagline: "Together with their families",
     subTagline: "cordially invite you to celebrate their wedding",
     ctaButton: "Open Invitation",
