@@ -1,0 +1,167 @@
+.std-section {
+  background: linear-gradient(180deg, #FAF7F2 0%, #F8F3EB 100%);
+  text-align: center;
+}
+
+/* Card */
+.std-card {
+  background: var(--ivory-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gold-pale);
+  box-shadow: var(--shadow-md);
+  padding: 36px 28px;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.std-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rose-light), var(--gold), var(--rose-light));
+}
+
+.std-card-top {
+  margin-bottom: 24px;
+}
+
+.std-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.std-couple {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  font-weight: 400;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.std-couple span {
+  color: var(--rose);
+  font-style: italic;
+}
+
+/* Date display */
+.std-date-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.std-date-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.std-date-num {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.std-date-unit {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.std-date-divider {
+  font-size: 28px;
+  color: var(--gold-line);
+  line-height: 1;
+  padding-bottom: 8px;
+}
+
+/* Countdown */
+.countdown {
+  text-align: center;
+}
+
+.countdown-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.countdown-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+.count-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: var(--ivory-card);
+  border: 1px solid var(--gold-pale);
+  border-radius: var(--radius-md);
+  padding: 14px 12px 10px;
+  min-width: 64px;
+  box-shadow: var(--shadow-sm);
+}
+
+.count-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-label {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.countdown-sep {
+  font-size: 1.8rem;
+  color: var(--gold-line);
+  line-height: 1;
+  padding-top: 14px;
+}
+
+.countdown-past {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--gold);
+  font-style: italic;
+}
+
+@media (min-width: 480px) {
+  .count-unit {
+    min-width: 76px;
+    padding: 16px 16px 12px;
+  }
+  .count-num {
+    font-size: 2.4rem;
+  }
+  .countdown-grid {
+    gap: 12px;
+  }
+}

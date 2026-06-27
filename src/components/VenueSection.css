@@ -1,0 +1,102 @@
+.venue-section {
+  background: linear-gradient(180deg, #FAF7F2 0%, var(--ivory-deep) 100%);
+  text-align: center;
+}
+
+.venue-card {
+  background: var(--ivory-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gold-pale);
+  box-shadow: var(--shadow-lg);
+  padding: 44px 28px 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.venue-card-deco {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.venue-card-deco svg {
+  width: 100%;
+  height: 80px;
+}
+
+.venue-pin {
+  font-size: 36px;
+  margin-bottom: 12px;
+  display: block;
+  line-height: 1;
+}
+
+.venue-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.venue-area {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.venue-divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold-line);
+  margin: 0 auto 20px;
+}
+
+.venue-address {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-mid);
+  margin-bottom: 28px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.venue-map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--text-dark);
+  color: var(--gold-pale);
+  text-decoration: none;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border-radius: 999px;
+  transition: var(--transition);
+  box-shadow: 0 4px 16px rgba(44, 36, 22, 0.2);
+}
+
+.venue-map-btn:hover,
+.venue-map-btn:focus-visible {
+  background: var(--gold);
+  color: #FAF7F2;
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(184, 146, 42, 0.32);
+}
+
+@media (min-width: 560px) {
+  .venue-card {
+    padding: 52px 48px 44px;
+  }
+}

@@ -1,0 +1,135 @@
+.family-section {
+  background: linear-gradient(180deg, #F8F3EB 0%, #FAF7F2 100%);
+  text-align: center;
+}
+
+.family-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.family-separator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.family-sep-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-line), transparent);
+}
+
+.family-sep-icon {
+  font-size: 20px;
+  color: var(--gold-light);
+  line-height: 1;
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+/* Card */
+.family-card {
+  background: var(--ivory-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 1px solid rgba(222, 200, 130, 0.3);
+}
+
+.family-card-header {
+  padding: 24px 24px 20px;
+  background: linear-gradient(135deg, var(--ivory-deep), var(--ivory-card));
+  border-bottom: 1px solid var(--gold-pale);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.family-card-bride .family-card-header {
+  background: linear-gradient(135deg, var(--rose-pale), var(--ivory-card));
+}
+
+.family-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.family-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-dark);
+}
+
+/* Members */
+.family-members {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.family-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.family-member-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold-pale);
+  margin: 0 auto;
+}
+
+.family-role {
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 4px;
+}
+
+.family-name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.family-name-other {
+  font-size: 1.1rem;
+  color: var(--text-mid);
+}
+
+@media (min-width: 640px) {
+  .family-grid {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .family-grid > * {
+    flex: 1;
+  }
+  .family-separator {
+    flex-direction: column;
+    width: 48px;
+    padding: 0 0;
+    align-self: stretch;
+    gap: 8px;
+  }
+  .family-sep-line {
+    width: 1px;
+    height: auto;
+    flex: 1;
+    background: linear-gradient(to bottom, transparent, var(--gold-line), transparent);
+  }
+  .family-sep-icon {
+    transform: none;
+  }
+}
