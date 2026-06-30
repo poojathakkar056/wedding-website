@@ -7,23 +7,27 @@
 
 /* ── TOKENS ──────────────────────────────────────────────── */
 :root {
-  --ivory:        #FAF7F2;
-  --ivory-deep:   #F2EDE4;
-  --ivory-card:   #FDFAF6;
-  --gold:         #B8922A;
+  /* Warm peach/ivory watercolor palette to match invitation card */
+  --ivory:        #FBEFE3;
+  --ivory-deep:   #F6E3D0;
+  --ivory-card:   #FDF6EC;
+  --peach:        #F8E0C8;
+  --peach-deep:   #F2CFA8;
+  --gold:         #B8862E;
   --gold-light:   #D4A843;
-  --gold-pale:    #F0DFA8;
-  --gold-line:    #DEC882;
-  --rose:         #C9897B;
-  --rose-light:   #E8B4A8;
-  --rose-pale:    #F8EBE7;
-  --text-dark:    #2C2416;
-  --text-mid:     #5C4A30;
-  --text-muted:   #8C7A62;
-  --text-light:   #B8A88C;
-  --shadow-sm:    0 2px 12px rgba(184,146,42,0.08);
-  --shadow-md:    0 6px 28px rgba(184,146,42,0.14);
-  --shadow-lg:    0 16px 48px rgba(184,146,42,0.18);
+  --gold-pale:    #EAD2A0;
+  --gold-line:    #D9B36C;
+  --rose:         #A23B3B;
+  --rose-deep:    #8A2F35;
+  --rose-light:   #C97B6E;
+  --rose-pale:    #F3DAD3;
+  --text-dark:    #5C2A28;
+  --text-mid:     #7A3F35;
+  --text-muted:   #9B7A5A;
+  --text-light:   #C2A98A;
+  --shadow-sm:    0 2px 12px rgba(162,59,59,0.08);
+  --shadow-md:    0 6px 28px rgba(162,59,59,0.12);
+  --shadow-lg:    0 16px 48px rgba(162,59,59,0.16);
   --radius-sm:    8px;
   --radius-md:    16px;
   --radius-lg:    24px;
@@ -68,6 +72,39 @@ button {
   font-family: inherit;
 }
 
+/* ── PAGE BACKGROUND (shared floral corner motif, repeats per section) ── */
+.page-bg {
+  position: relative;
+  background-color: var(--ivory);
+  background-repeat: repeat-y;
+  background-position: top center;
+  background-size: 480px auto;
+}
+
+/* Soft translucent wash so text/cards stay readable over the artwork */
+.page-bg::before {
+  content: "";
+  position: fixed;
+  top: 100svh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(251, 239, 227, 0.4);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 700px) {
+  .page-bg {
+    background-size: 620px auto;
+  }
+}
+
 /* ── UTILITY CLASSES ─────────────────────────────────────── */
 .section {
   padding: 72px 20px;
@@ -78,6 +115,8 @@ button {
 .section-inner {
   max-width: 720px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .section-label {
@@ -86,7 +125,7 @@ button {
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--rose);
   margin-bottom: 16px;
   display: block;
 }
@@ -94,8 +133,8 @@ button {
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2rem, 6vw, 3rem);
-  font-weight: 400;
-  color: var(--text-dark);
+  font-weight: 500;
+  color: var(--rose-deep);
   line-height: 1.2;
   margin-bottom: 12px;
 }

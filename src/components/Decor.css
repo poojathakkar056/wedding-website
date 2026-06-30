@@ -1,0 +1,127 @@
+/* ============================================================
+   SHARED DECORATIVE ELEMENTS
+   Floral corners, monogram frame, palace silhouette, dividers
+   ============================================================ */
+
+/* ── Floral corner placement ───────────────────────────────── */
+.floral-corner {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floral-corner-tl {
+  top: 0;
+  left: 0;
+}
+
+.floral-corner-tr {
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.floral-corner-bl {
+  bottom: 0;
+  left: 0;
+  transform: scaleY(-1);
+}
+
+.floral-corner-br {
+  bottom: 0;
+  right: 0;
+  transform: scale(-1, -1);
+}
+
+@media (min-width: 600px) {
+  .floral-corner {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* ── Ornamental divider ────────────────────────────────────── */
+.ornate-divider {
+  width: 100%;
+  max-width: 220px;
+  margin: 20px auto;
+}
+
+/* ── Monogram frame (loading screen + hero) ───────────────── */
+.monogram-frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monogram-frame svg {
+  position: absolute;
+  inset: 0;
+}
+
+.monogram-frame-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ── Palace silhouette background ─────────────────────────── */
+.palace-silhouette {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@media (min-width: 600px) {
+  .palace-silhouette {
+    height: 200px;
+  }
+}
+
+/* ── Hanging lantern ───────────────────────────────────────── */
+.hanging-lantern {
+  position: absolute;
+  width: 28px;
+  height: 64px;
+  pointer-events: none;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* ── Frame border (thin gold double-line, used as outer card border) ── */
+.invite-frame-border {
+  position: absolute;
+  inset: 10px;
+  border: 1px solid var(--gold-line);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.invite-frame-border::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 0.5px solid var(--gold-line);
+  opacity: 0.6;
+}
+
+@media (min-width: 600px) {
+  .invite-frame-border {
+    inset: 18px;
+  }
+  .invite-frame-border::before {
+    inset: 6px;
+  }
+}

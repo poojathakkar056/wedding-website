@@ -8,7 +8,7 @@
   border-radius: 50%;
   background: var(--ivory-card);
   border: 1.5px solid var(--gold-line);
-  color: var(--gold);
+  color: var(--rose);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,17 +21,17 @@
 
 .music-btn:hover,
 .music-btn:focus-visible {
-  background: var(--gold);
-  color: #FAF7F2;
-  border-color: var(--gold);
+  background: var(--rose);
+  color: #FDF6EC;
+  border-color: var(--rose);
   outline: none;
   transform: scale(1.08);
 }
 
 .music-btn-playing {
-  background: var(--gold);
-  color: #FAF7F2;
-  border-color: var(--gold);
+  background: var(--rose);
+  color: #FDF6EC;
+  border-color: var(--rose);
   animation: musicPulse 2.5s ease-in-out infinite;
 }
 

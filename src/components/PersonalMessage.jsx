@@ -1,5 +1,7 @@
 import { weddingData } from "../data/weddingData";
 import useScrollReveal from "../hooks/useScrollReveal";
+import { FloralCorner } from "./Decor";
+import "./Decor.css";
 import "./PersonalMessage.css";
 
 export default function PersonalMessage() {
@@ -8,6 +10,8 @@ export default function PersonalMessage() {
 
   return (
     <section className="section pm-section">
+      <FloralCorner className="floral-corner floral-corner-tr" />
+      <FloralCorner className="floral-corner floral-corner-bl" />
       <div className="section-inner" ref={ref}>
         <div className="pm-card reveal">
           {/* Quote mark */}

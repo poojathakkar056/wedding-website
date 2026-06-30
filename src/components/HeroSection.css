@@ -4,44 +4,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 24px;
+  padding: 56px 24px 64px;
   position: relative;
-  background: linear-gradient(160deg, #FAF7F2 0%, #F5EFE6 50%, #FAF2EC 100%);
+  background-color: #FBEFE3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
-
-/* Petal blobs */
-.hero-petal {
-  position: absolute;
-  border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
-  opacity: 0.06;
-  pointer-events: none;
-}
-.hero-petal-1 {
-  width: 360px;
-  height: 360px;
-  background: var(--gold);
-  top: -60px;
-  right: -80px;
-}
-.hero-petal-2 {
-  width: 280px;
-  height: 280px;
-  background: var(--rose);
-  bottom: -40px;
-  left: -60px;
-}
-
-/* Corner decorations */
-.hero-corner {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-}
-.hero-corner-tl { top: 16px; left: 16px; }
-.hero-corner-tr { top: 16px; right: 16px; }
-.hero-corner-bl { bottom: 16px; left: 16px; }
-.hero-corner-br { bottom: 16px; right: 16px; }
 
 /* Content */
 .hero-content {
@@ -49,26 +19,29 @@
   flex-direction: column;
   align-items: center;
   gap: 0;
-  max-width: 520px;
+  max-width: 480px;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  /* Sits in the open middle area of the background artwork */
+  margin-top: 6vh;
 }
 
 .hero-blessing {
   font-family: var(--font-ui);
   font-size: 12px;
-  letter-spacing: 0.18em;
-  color: var(--gold);
-  margin-bottom: 28px;
+  letter-spacing: 0.12em;
+  color: var(--rose);
+  margin-bottom: 22px;
+  text-shadow: 0 1px 8px rgba(255,255,255,0.5);
 }
 
 .hero-tagline {
   font-family: var(--font-body);
   font-size: 15px;
-  color: var(--text-muted);
+  color: var(--text-mid);
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 /* Names */
@@ -76,103 +49,95 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  gap: 0;
+  margin-bottom: 18px;
+  margin-top: 6px;
+  gap: 4px;
 }
 
 .hero-bride,
 .hero-groom {
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 9vw, 4.2rem);
-  font-weight: 400;
-  color: var(--text-dark);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-size: clamp(1.6rem, 6.5vw, 2.4rem);
+  font-weight: 500;
+  color: var(--rose-deep);
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  text-shadow: 0 2px 14px rgba(255,255,255,0.5);
 }
 
 .hero-amp {
   font-family: var(--font-display);
-  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
   font-style: italic;
-  font-weight: 300;
-  color: var(--rose);
-  line-height: 1.6;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1.2;
 }
 
 .hero-invite {
   font-family: var(--font-body);
   font-size: 15px;
-  color: var(--text-muted);
+  color: var(--text-mid);
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
 }
 
 /* Date block */
 .hero-date-block {
   display: flex;
   align-items: center;
-  gap: 16px;
-  margin-bottom: 36px;
-  width: 100%;
-  max-width: 360px;
+  gap: 12px;
+  margin-bottom: 28px;
 }
 
-.hero-date-line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold-line));
-}
-
-.hero-date-block .hero-date-line:last-child {
-  background: linear-gradient(to left, transparent, var(--gold-line));
+.hero-date-deco {
+  color: var(--gold);
+  font-size: 11px;
 }
 
 .hero-date {
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  color: var(--gold);
-  white-space: nowrap;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  color: var(--rose-deep);
   font-weight: 500;
-  letter-spacing: 0.04em;
 }
 
-/* CTA button */
+/* CTA button — rounded pill, dusty rose, scalloped feel */
 .hero-cta {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--gold);
-  color: #FAF7F2;
+  background: var(--rose-light);
+  color: #FDF6EC;
   font-family: var(--font-ui);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 14px 32px;
+  padding: 14px 34px;
   border-radius: 999px;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(184,146,42,0.28);
+  box-shadow: 0 6px 22px rgba(162,59,59,0.28);
   transition: var(--transition);
-  border: 1.5px solid transparent;
+  border: 1.5px solid var(--gold-line);
 }
 
 .hero-cta:hover,
 .hero-cta:focus-visible {
-  background: transparent;
-  color: var(--gold);
-  border-color: var(--gold);
-  box-shadow: none;
+  background: var(--rose-deep);
   outline: none;
   transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(162,59,59,0.36);
 }
 
 /* Animations */
-.animate-fade-1 { animation: fadeUp 0.9s ease 0.2s both; }
-.animate-fade-2 { animation: fadeUp 0.9s ease 0.35s both; }
-.animate-fade-3 { animation: fadeUp 0.9s ease 0.5s both; }
-.animate-fade-4 { animation: fadeUp 0.9s ease 0.65s both; }
-.animate-fade-5 { animation: fadeUp 0.9s ease 0.8s both; }
-.animate-fade-6 { animation: fadeUp 0.9s ease 0.95s both; }
+.animate-fade-1 { animation: fadeUp 0.9s ease 0.15s both; }
+.animate-fade-2 { animation: fadeUp 0.9s ease 0.3s both; }
+.animate-fade-3 { animation: fadeUp 0.9s ease 0.45s both; }
+.animate-fade-4 { animation: fadeUp 0.9s ease 0.6s both; }
+.animate-fade-5 { animation: fadeUp 0.9s ease 0.75s both; }
+.animate-fade-6 { animation: fadeUp 0.9s ease 0.9s both; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -181,10 +146,13 @@
 
 @media (min-width: 480px) {
   .hero-names {
-    flex-direction: row;
-    gap: 12px;
+    flex-direction: column;
   }
-  .hero-amp {
-    line-height: 1;
+}
+
+@media (min-width: 900px) {
+  .hero {
+    background-size: contain;
+    background-color: #FBEFE3;
   }
 }

@@ -1,5 +1,4 @@
 .venue-section {
-  background: linear-gradient(180deg, #FAF7F2 0%, var(--ivory-deep) 100%);
   text-align: center;
 }
 
@@ -72,7 +71,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--text-dark);
+  background: var(--rose-deep);
   color: var(--gold-pale);
   text-decoration: none;
   font-family: var(--font-ui);
@@ -83,16 +82,16 @@
   padding: 14px 28px;
   border-radius: 999px;
   transition: var(--transition);
-  box-shadow: 0 4px 16px rgba(44, 36, 22, 0.2);
+  box-shadow: 0 4px 16px rgba(138, 47, 53, 0.22);
 }
 
 .venue-map-btn:hover,
 .venue-map-btn:focus-visible {
-  background: var(--gold);
-  color: #FAF7F2;
+  background: var(--rose);
+  color: #FDF6EC;
   outline: none;
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(184, 146, 42, 0.32);
+  box-shadow: 0 6px 24px rgba(162, 59, 59, 0.32);
 }
 
 @media (min-width: 560px) {

@@ -1,5 +1,7 @@
 import { weddingData } from "../data/weddingData";
 import useScrollReveal from "../hooks/useScrollReveal";
+import { FloralCorner, PalaceSilhouette } from "./Decor";
+import "./Decor.css";
 import "./VenueSection.css";
 
 export default function VenueSection() {
@@ -8,6 +10,9 @@ export default function VenueSection() {
 
   return (
     <section className="section venue-section">
+      <FloralCorner className="floral-corner floral-corner-tl" />
+      <FloralCorner className="floral-corner floral-corner-tr" />
+      <PalaceSilhouette />
       <div className="section-inner" ref={ref}>
 
         <div className="reveal" style={{ textAlign: "center" }}>

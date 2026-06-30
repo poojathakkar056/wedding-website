@@ -25,73 +25,60 @@ export const weddingData = {
 
   // ── HERO SECTION ───────────────────────────────────────────
   hero: {
-    blessing: "🪔 Shri Ganeshaya Namah  🪔",
-    tagline: "Together with their families",
-    subTagline: "cordially invite you to celebrate their wedding",
+    blessing: "|| श्री गणेशाय नमः ||",
+    tagline: "With the blessings of Lord Ganesha & our beloved families,",
+    subTagline: "we joyfully invite you to celebrate the wedding of",
     ctaButton: "Open Invitation",
+    brideDetails: "D/O Kirti Ben & Jayanta Bhai Thakkar",
+    groomDetails: "S/O Pooja Ben & Girish Bhai Nagrecha",
   },
 
   // ── PERSONAL MESSAGE ───────────────────────────────────────
   personalMessage: {
     greeting: "Dear Family and Friends,",
     body: "Your presence and blessings mean the world to us. We would be honoured to celebrate this beautiful chapter of our lives with you.",
-    closing: "With love,",
-    signoff: "Pooja & Mayank",
+    closing: "Awaiting your presence,",
+    signoff: "Thakkar Family",
   },
 
-  // ── FAMILIES ───────────────────────────────────────────────
-  brideFamily: {
-    title: "Bride's Family",
-    father: "Jayanta Bhai Thakkar",
-    mother: "Kirti Ben Thakkar",
-    // Optional: add siblings or other relatives
-    // others: ["Name Here"]
-  },
-  groomFamily: {
-    title: "Groom's Family",
-    father: "Girish Bhai Nagrecha",
-    mother: "Pooja Ben Nagrecha",
-  },
 
   // ── EVENT TIMELINE ─────────────────────────────────────────
   events: [
     {
-      id: "tilak",
-      name: "Tilak",
-      date: "02 September 2026",
-      day: "Wednesday",
+      id: "chunri",
+      name: "Chunari ne Ashirwaad",
+      date: "03 September 2026",
+      day: "Thursday",
       time: "11:00 AM",
-      venue: "Nagrecha Residence",
-      icon: "🪔",
+      //icon: "🪔",
+      icon: "✨ ",
       description: "A sacred ritual marking the beginning of the wedding festivities.",
     },
     {
-      id: "haldi",
-      name: "Haldi",
-      date: "03 September 2026",
-      day: "Thursday",
-      time: "10:00 AM",
-      venue: "Thakkar Residence",
-      icon: "🌼",
-      description: "Turmeric blessings for radiance and good fortune.",
-    },
-    {
       id: "sangeet",
-      name: "Sangeet",
+      name: "Shaam Shandaar",
       date: "03 September 2026",
       day: "Thursday",
       time: "07:00 PM",
-      venue: "Sanchita Lawns, Thekwa",
       icon: "🎶",
       description: "An evening of music, dance, and joyful celebrations.",
     },
     {
-      id: "wedding",
-      name: "Wedding Ceremony",
+      id: "haldi",
+      name: "Rang-E-Shagun",
       date: "04 September 2026",
       day: "Friday",
-      time: "11:00 AM",
-      venue: "Sanchita Lawns, Thekwa",
+      time: "10:00 AM",
+      icon: "🌼",
+      description: "Turmeric blessings for radiance and good fortune.",
+    },
+    
+    {
+      id: "wedding",
+      name: "Shubh Vivaah",
+      date: "04 September 2026",
+      day: "Friday",
+      time: "4:00 PM",
       icon: "💍",
       description: "The sacred union of Pooja and Mayank.",
       highlight: true,
@@ -112,7 +99,6 @@ export const weddingData = {
   // Add photo paths here (relative to /public folder).
   // Leave empty to hide the gallery section entirely.
   photos: [
-    "/photos/pic1.avif"
     // Example:
     // "/photos/photo1.jpg",
     // "/photos/photo2.jpg",
@@ -121,8 +107,23 @@ export const weddingData = {
   // ── MUSIC ──────────────────────────────────────────────────
   music: {
     enabled: true,
-    src: "/music/wedding-song.mp3", // Place your MP3 in public/music/
+    src: "/music/forever-starts-today.mp3",
     label: "Wedding Song",
+  },
+
+  // ── BACKGROUND ARTWORK ─────────────────────────────────────
+  // Full illustration — used as the showcase backdrop on Loading Screen & Hero.
+  // Subtle  — a softened, faded corner-only crop tiled behind every other
+  //           section so the motif repeats cleanly without visible seams.
+  background: {
+    image: "/images/bg-floral-palace.png",
+    subtleImage: "/images/bg-floral-subtle.png",
+  },
+
+  // ── LOGO / MONOGRAM ────────────────────────────────────────
+  // Circular P&M monogram badge shown on the Loading Screen.
+  logo: {
+    image: "/images/logo-monogram.png",
   },
 
   // ── FOOTER ─────────────────────────────────────────────────

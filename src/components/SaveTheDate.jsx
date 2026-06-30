@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { weddingData } from "../data/weddingData";
 import useScrollReveal from "../hooks/useScrollReveal";
+import { FloralCorner } from "./Decor";
+import "./Decor.css";
 import "./SaveTheDate.css";
 
 function pad(n) {
@@ -38,11 +40,14 @@ export default function SaveTheDate() {
 
   return (
     <section id="save-the-date" className="section std-section">
+      <FloralCorner className="floral-corner floral-corner-tl" />
+      <FloralCorner className="floral-corner floral-corner-br" />
       <div className="section-inner" ref={ref}>
 
         <div className="reveal">
-          <span className="section-label">Mark Your Calendar</span>
-          <h2 className="section-title">Save the Date</h2>
+          <h2 className="section-label">A day to remember</h2>
+          <span className="section-title">It's happening !!</span>
+          
         </div>
 
         <div className="divider reveal reveal-delay-1">

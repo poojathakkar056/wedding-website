@@ -1,5 +1,7 @@
 import { weddingData } from "../data/weddingData";
 import useScrollReveal from "../hooks/useScrollReveal";
+import { FloralCorner } from "./Decor";
+import "./Decor.css";
 import "./EventTimeline.css";
 
 export default function EventTimeline() {
@@ -7,12 +9,15 @@ export default function EventTimeline() {
   const ref = useScrollReveal();
 
   return (
+    
     <section className="section timeline-section">
+      <FloralCorner className="floral-corner floral-corner-tr" />
+      <FloralCorner className="floral-corner floral-corner-bl" />
       <div className="section-inner" ref={ref}>
 
         <div className="reveal" style={{ textAlign: "center" }}>
           <span className="section-label">The Celebrations</span>
-          <h2 className="section-title">Wedding Events</h2>
+          <h2 className="section-title">Wedding Festivities</h2>
         </div>
 
         <div className="divider reveal reveal-delay-1">
@@ -30,16 +35,13 @@ export default function EventTimeline() {
               <div className="timeline-icon">{event.icon}</div>
 
               <div className="timeline-card">
-                {event.highlight && (
-                  <div className="timeline-badge">Main Event</div>
-                )}
+                
                 <h3 className="timeline-name">{event.name}</h3>
                 <div className="timeline-meta">
                   <span className="timeline-day">{event.day}, {event.date}</span>
                   <span className="timeline-sep" aria-hidden="true">·</span>
                   <span className="timeline-time">{event.time}</span>
                 </div>
-                <p className="timeline-venue">📍 {event.venue}</p>
                 <p className="timeline-desc">{event.description}</p>
               </div>
             </div>
