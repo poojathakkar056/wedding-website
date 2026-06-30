@@ -3,6 +3,8 @@
 //  Edit everything here — the website reads from this file.
 // ============================================================
 
+const BASE_URL = import.meta.env.BASE_URL || "/";
+
 export const weddingData = {
   // ── COUPLE ─────────────────────────────────────────────────
   bride: {
@@ -107,7 +109,7 @@ export const weddingData = {
   // ── MUSIC ──────────────────────────────────────────────────
   music: {
     enabled: true,
-    src: "/music/forever-starts-today.mp3",
+    src: `${BASE_URL}music/forever-starts-today.mp3`,
     label: "Wedding Song",
   },
 
@@ -116,14 +118,14 @@ export const weddingData = {
   // Subtle  — a softened, faded corner-only crop tiled behind every other
   //           section so the motif repeats cleanly without visible seams.
   background: {
-    image: "/images/bg-floral-palace.png",
-    subtleImage: "/images/bg-floral-subtle.png",
+    image: `${BASE_URL}images/bg-floral-palace.png`,
+    subtleImage: `${BASE_URL}images/bg-floral-subtle.png`,
   },
 
   // ── LOGO / MONOGRAM ────────────────────────────────────────
   // Circular P&M monogram badge shown on the Loading Screen.
   logo: {
-    image: "/images/logo-monogram.png",
+    image: `${BASE_URL}images/logo-monogram.png`,
   },
 
   // ── FOOTER ─────────────────────────────────────────────────
