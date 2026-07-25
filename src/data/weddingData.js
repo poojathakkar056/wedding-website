@@ -51,7 +51,7 @@ export const weddingData = {
       name: "Chunari ne Ashirwaad",
       date: "03 September 2026",
       day: "Thursday",
-      time: "11:00 AM",
+      time: "4:00 PM",
       //icon: "🪔",
       icon: "✨ ",
       description: "A sacred ritual marking the beginning of the wedding festivities.",
@@ -66,13 +66,22 @@ export const weddingData = {
       description: "An evening of music, dance, and joyful celebrations.",
     },
     {
+      id: "mandapmuharat",
+      name: "Shubh Aarambh",
+      date: "04 September 2026",
+      day: "Friday",
+      time: "8:00 AM",
+      icon: "🌸",
+      description: "An auspicious ritual seeking divine blessings for a joyful and prosperous wedding.",
+    },
+    {
       id: "haldi",
-      name: "Rang-E-Shagun",
+      name: "Rang-e-Mehfil",
       date: "04 September 2026",
       day: "Friday",
       time: "10:00 AM",
-      icon: "🌼",
-      description: "Turmeric blessings for radiance and good fortune.",
+      icon: "💛",
+      description: "A vibrant celebration of traditions, colors, music, and joyful moments before the wedding.",
     },
     
     {
@@ -82,17 +91,17 @@ export const weddingData = {
       day: "Friday",
       time: "4:00 PM",
       icon: "💍",
-      description: "The sacred union of Pooja and Mayank.",
+      description: "A sacred celebration of love, tradition, and the beautiful beginning of forever.",
       highlight: true,
     },
   ],
 
   // ── VENUE ──────────────────────────────────────────────────
   venue: {
-    name: "Sanchita Lawns",
+    name: "Sachita  Lawns",
     area: "Thekwa, Chhattisgarh",
-    fullAddress: "Sanchita Lawns, Thekwa, Chhattisgarh, India",
-    mapsUrl: "https://maps.google.com/?q=Sanchita+Lawns+Thekwa+Chhattisgarh",
+    fullAddress: "Sachita Lawns, Thekwa, Chhattisgarh, India",
+    mapsUrl: "https://maps.google.com/?q=Sachita+Lawns+Thekwa+Chhattisgarh",
     // Replace with actual Google Maps embed link if available
     embedUrl: "",
   },
@@ -109,7 +118,7 @@ export const weddingData = {
   // ── MUSIC ──────────────────────────────────────────────────
   music: {
     enabled: true,
-    src: `${BASE_URL}music/forever-starts-today.mp3`,
+    src: `${BASE_URL}music/Vakratunda-Mahakaya.mp3`,
     label: "Wedding Song",
   },
 
@@ -131,7 +140,7 @@ export const weddingData = {
   // ── FOOTER ─────────────────────────────────────────────────
   footer: {
     thankYouMessage: "Thank you for being part of our special day.",
-    hashtag: "#MayankNiPoojaSaphal",
+    hashtag: "#MayankKiPoojaSaphal",
     coupleNames: "Pooja ❤️ Mayank",
   },
 };
