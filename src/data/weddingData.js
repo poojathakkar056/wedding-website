@@ -116,7 +116,7 @@ export const weddingData = {
       //image: `${BASE_URL}images/bg-floral-palace.png`,
       //thumbnails: [
         `${BASE_URL}photos/Pic1.jpg`,
-        `${BASE_URL}photos/Pic2.jpg`,
+        //`${BASE_URL}photos/Pic2.jpg`,
         `${BASE_URL}photos/Pic3.jpg`,
       ],
     //},
