@@ -48,7 +48,7 @@ export const weddingData = {
   events: [
     {
       id: "chunri",
-      name: "Chunari ne Ashirwaad",
+      name: "Chunari ane Ashirwaad",
       date: "03 September 2026",
       day: "Thursday",
       time: "4:00 PM",
