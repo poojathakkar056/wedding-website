@@ -29,7 +29,7 @@ export default function PhotoGallery() {
           <div className="divider-line" />
         </div>
 
-        <div className="gallery-grid reveal reveal-delay-2">
+        <div className="gallery-grid reveal reveal-delay-2 ">
           {photos.map((src, i) => (
             <button
               key={i}

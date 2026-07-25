@@ -17,11 +17,14 @@
   border: 1px solid var(--gold-pale);
   transition: var(--transition);
 }
-
-.gallery-thumb:nth-child(3n+1) {
+/* .masonry-gallery .gallery-thumb:nth-child(3n+1) {
+  grid-column: span 2;
+  aspect-ratio: 16 / 9;
+} */
+/* .gallery-thumb:nth-child(3n+1) {
   grid-column: span 2;
   aspect-ratio: 16/9;
-}
+} */
 
 .gallery-thumb img {
   width: 100%;
