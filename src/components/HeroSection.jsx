@@ -4,7 +4,7 @@ import "./HeroSection.css";
 
 export default function HeroSection() {
   const [revealed, setRevealed] = useState(false);
-  const { bride, groom, hero, weddingDateDisplay, background } = weddingData;
+  const { bride, groom, hero, weddingDateDisplay, background , ganesha} = weddingData;
 
   return (
     <section
@@ -12,6 +12,13 @@ export default function HeroSection() {
       style={{ backgroundImage: `url(${background.image})` }}
     >
       <div className="hero-content">
+        <div className="hero-ganesha ">
+        <img
+            src={ganesha.image}
+            alt="Shri Ganesha"
+            className="hero-ganesha-img"
+          />
+          </div>
         <p className="hero-blessing animate-fade-1">{hero.blessing}</p>
 
         <p className="hero-tagline animate-fade-2">{hero.tagline}</p>

@@ -143,6 +143,7 @@ export const weddingData = {
   logo: {
     image: `${BASE_URL}images/logo-monogram.png`,
   },
+  ganesha: { image: `${BASE_URL}images/ganesha.jpg` },
 
   // ── FOOTER ─────────────────────────────────────────────────
   footer: {

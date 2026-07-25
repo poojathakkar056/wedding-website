@@ -27,6 +27,24 @@
   margin-top: 6vh;
 }
 
+/* ── Ganesha image ─────────────────────────────────────────── */
+.hero-ganesha {
+  margin-bottom: 10px;
+}
+
+.hero-ganesha-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  /* Orange Ganesha on white bg — mix-blend-mode multiply
+     makes the white transparent so it floats cleanly
+     on any background color */
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 2px 8px rgba(162, 59, 59, 0.15));
+}
+
+/* ─────────────────────────────────────────────────────────── */
+
 .hero-blessing {
   font-family: var(--font-ui);
   font-size: 12px;
