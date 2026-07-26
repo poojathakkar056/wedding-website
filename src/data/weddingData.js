@@ -54,7 +54,7 @@ export const weddingData = {
       time: "04:00 PM",
       //icon: "🪔",
       icon: "✨ ",
-      description: "A sacred ritual marking the beginning of the wedding festivities.",
+      description: "Where blessings are bestowed, traditions are cherished and the celebrations gracefully begin.",
     },
     {
       id: "sangeet",
@@ -63,7 +63,7 @@ export const weddingData = {
       day: "Thursday",
       time: "07:00 PM",
       icon: "🎶",
-      description: "An evening of music, dance and joyful celebrations.",
+      description: "A night of melodies, laughter, dazzling performances and unforgettable memories.",
     },
     {
       id: "mandapmuhurat",
@@ -72,7 +72,7 @@ export const weddingData = {
       day: "Friday",
       time: "07:00 AM",
       icon: "🌸",
-      description: "An auspicious ritual seeking divine blessings for a joyful and prosperous wedding.",
+      description: "A sacred beginning, seeking divine blessings for a lifetime of love and togetherness.",
     },
     {
       id: "haldi",
@@ -81,7 +81,7 @@ export const weddingData = {
       day: "Friday",
       time: "11:00 AM",
       icon: "💛",
-      description: "A vibrant celebration of traditions, colors, music and joyful moments before the wedding.",
+      description: "A celebration painted with colors, games, laughter and the joy of togetherness.",
     },
     
     {
@@ -91,7 +91,7 @@ export const weddingData = {
       day: "Friday",
       time: "05:15 PM",
       icon: "💍",
-      description: "A sacred celebration of love, tradition and the beautiful beginning of forever.",
+      description: "Two hearts, two families, one beautiful promise—forever begins here.",
       highlight: true,
     },
   ],
