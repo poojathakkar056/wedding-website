@@ -10,13 +10,13 @@ export const weddingData = {
   bride: {
     firstName: "Pooja",
     lastName: "Thakkar",
-    fullName: "Pooja Thakkar",
+    fullName: "Pooja",
     initial: "P",
   },
   groom: {
     firstName: "Mayank",
     lastName: "Nagrecha",
-    fullName: "Mayank Nagrecha",
+    fullName: "Mayank",
     initial: "M",
   },
 
@@ -63,11 +63,11 @@ export const weddingData = {
       day: "Thursday",
       time: "07:00 PM",
       icon: "🎶",
-      description: "An evening of music, dance, and joyful celebrations.",
+      description: "An evening of music, dance and joyful celebrations.",
     },
     {
-      id: "mandapmuharat",
-      name: "Mandap Muharat",
+      id: "mandapmuhurat",
+      name: "Mandap Muhurat",
       date: "04 September 2026",
       day: "Friday",
       time: "07:00 AM",
@@ -81,7 +81,7 @@ export const weddingData = {
       day: "Friday",
       time: "11:00 AM",
       icon: "💛",
-      description: "A vibrant celebration of traditions, colors, music, and joyful moments before the wedding.",
+      description: "A vibrant celebration of traditions, colors, music and joyful moments before the wedding.",
     },
     
     {
@@ -91,7 +91,7 @@ export const weddingData = {
       day: "Friday",
       time: "05:15 PM",
       icon: "💍",
-      description: "A sacred celebration of love, tradition, and the beautiful beginning of forever.",
+      description: "A sacred celebration of love, tradition and the beautiful beginning of forever.",
       highlight: true,
     },
   ],
