@@ -8,14 +8,43 @@ export default function MusicPlayer() {
   const [hasError, setHasError] = useState(false);
   const audioRef = useRef(null);
 
-  // Music is disabled by default (per requirement)
+  //Music is disabled by default (per requirement)
+  // useEffect(() => {
+  //   const audio = audioRef.current;
+  //   if (!audio) return;
+  //   audio.volume = 0.6;
+  //   audio.loop = true;
+  // }, []);
   useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    audio.volume = 0.6;
-    audio.loop = true;
-  }, []);
+  const a = audioRef.current;
+  if (!a || !music.enabled) return;
+  a.volume = 0.6;
+  a.loop = true;
 
+  const tryPlay = async () => {
+    try {
+      await a.play();
+      setPlaying(true);
+      // Once played, remove the listener — job done
+      document.removeEventListener("touchstart", tryPlay);
+      document.removeEventListener("click", tryPlay);
+    } catch {
+      setPlaying(false);
+    }
+  };
+
+  // Try immediately (works on desktop)
+  setTimeout(tryPlay, 3500);
+
+  // Fallback: play on first touch (works on mobile)
+  document.addEventListener("touchstart", tryPlay, { once: true });
+  document.addEventListener("click", tryPlay, { once: true });
+
+  return () => {
+    document.removeEventListener("touchstart", tryPlay);
+    document.removeEventListener("click", tryPlay);
+  };
+}, []);
   const toggle = async () => {
     const audio = audioRef.current;
     if (!audio || hasError) return;
