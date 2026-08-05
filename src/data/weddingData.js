@@ -117,6 +117,8 @@ export const weddingData = {
       //thumbnails: [
         `${BASE_URL}photos/Pic1.jpg`,
         `${BASE_URL}photos/Pic2.jpg`,
+        `${BASE_URL}photos/Pic4.jpg`,
+        `${BASE_URL}photos/Pic5.jpg`,
         //`${BASE_URL}photos/Pic3.jpg`,
       ],
     //},
