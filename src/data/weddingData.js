@@ -150,7 +150,7 @@ export const weddingData = {
   // ── FOOTER ─────────────────────────────────────────────────
   footer: {
     thankYouMessage: "Thank you for being part of our special day.",
-    hashtag: "#MayankKiPoojaSaphal",
+    hashtag: "#MayankKiPoojaSafal",
     coupleNames: "Pooja ❤️ Mayank",
   },
 };
