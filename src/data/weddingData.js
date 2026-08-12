@@ -76,7 +76,7 @@ export const weddingData = {
     },
     {
       id: "haldi",
-      name: "Rang-e-Mehfil",
+      name: "Rang-e-Mehfil (Carnival)",
       date: "04 September 2026",
       day: "Friday",
       time: "11:00 AM",
